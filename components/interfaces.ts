@@ -9,3 +9,20 @@ export interface UploadFileProp {
   fileTypes: string,
   handleFiles: any,
 }
+
+export interface SliderProp {
+  initValue?: number,
+  min: number,
+  max: number,
+  step?: number,
+  onChange?: any
+}
+
+export interface CalculateProp {
+  value: number,
+  step: number,
+  min: number,
+  max: number,
+  truckWidth: number | any,
+}
+

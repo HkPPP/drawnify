@@ -5,6 +5,7 @@ import Image from 'next/image'
 import { useEffect, useState } from 'react'
 
 import UploadFile from '../components/UploadFile'
+import {Slider} from '../components/Slider'
 import { drawnifyImage } from '../components/OpenCV/processing'
 import { DrawnifyProp } from '../components/OpenCV/interfaces'
 
@@ -43,7 +44,7 @@ const Home: NextPage = () => {
         <meta name="description" content="Draw your favorite photo in style" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
+      <Slider min={10} max={100}></Slider>
       <div className='flex flex-col items-center'>
         {displayImage 
           ? <Image 
